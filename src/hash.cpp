@@ -210,3 +210,9 @@ std::string attempt_to_find_source_idstring_from_hashlist(dsl::idstring str, boo
 bool hashlist_contains(dsl::idstring str) {
   return hashlist.contains(str);
 }
+
+API_EXPORT void add_string_to_hashlist(const char* str) {
+  if (str) {
+    hashlist.insert({ dsl::idstring(str), str });
+  }
+}

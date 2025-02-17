@@ -37,3 +37,5 @@ API_EXPORT std::string attempt_to_find_source_idstring_from_hashlist(unsigned lo
 API_EXPORT std::string attempt_to_find_source_idstring_from_hashlist(dsl::idstring str, bool file_printable = true);
 
 API_EXPORT bool hashlist_contains(dsl::idstring str);
+
+API_EXPORT void add_string_to_hashlist(const char* str);
